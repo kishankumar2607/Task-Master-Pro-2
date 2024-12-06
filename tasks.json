@@ -1,18 +1,1 @@
-[
-  {
-    "id": 1733468436429,
-    "name": "task 2",
-    "assigned": "Bibin",
-    "due": "2024-12-25",
-    "priority": "Medium",
-    "description": "Task 2 description"
-  },
-  {
-    "id": 1733468455854,
-    "name": "task 3",
-    "assigned": "Gihan",
-    "due": "2024-12-30",
-    "priority": "High",
-    "description": "Task 3 description"
-  }
-]
+[]
