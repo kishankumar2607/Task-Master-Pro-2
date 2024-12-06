@@ -1,0 +1,24 @@
+{
+  "name": "task-master-pro",
+  "version": "1.0.0",
+  "description": "Task master pro to manage tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "server.js",
+    "dev": "nodemon server.js",
+    "build": "webpack",
+    "lint": "eslint.",
+    "format": "prettier --write.",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kishan, Bibin, Gihan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.7"
+  }
+}

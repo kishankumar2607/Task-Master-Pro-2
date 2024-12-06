@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="TaskMaster Pro is a feature-rich task management app that lets you add, edit, delete, and search tasks with ease. Organize tasks by priority, due date, and assignee, and keep track of your work effortlessly with a user-friendly interface and local storage support."
+        />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Kishan, Bibin, Gihan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Add Task - TaskMaster Pro</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar">
+                <h1>TaskMaster Pro</h1>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="add-task.html">Add Task</a></li>
+                    <li><a href="search-task.html">Search Tasks</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Add Task Form -->
+        <main class="app-container">
+            <div class="container">
+                <h1>Add New Task</h1>
+                <div class="form-container">
+                    <form id="task-form">
+                        <input
+                            type="text"
+                            id="task-name"
+                            placeholder="Task Name *"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="task-assigned"
+                            placeholder="Assigned To *"
+                            required
+                        />
+                        <input
+                            type="date"
+                            id="task-due"
+                            placeholder="Due Date"
+                            required
+                        />
+                        <select id="task-priority" required>
+                            <option value="">Priority</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                        <textarea
+                            id="task-description"
+                            placeholder="Description (optional)"
+                            maxlength="250"
+                        ></textarea>
+                        <button id="submit" type="submit">Add Task</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>
+                    Copyright &copy; 2024 TaskMaster Pro. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/addTask.js"></script>
+    </body>
+</html>

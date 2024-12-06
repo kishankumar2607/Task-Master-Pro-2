@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="TaskMaster Pro is a feature-rich task management app that lets you add, edit, delete, and search tasks with ease. Organize tasks by priority, due date, and assignee, and keep track of your work effortlessly with a user-friendly interface and local storage support."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Kishan, Bibin, Gihan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaskMaster Pro - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <h1>TaskMaster Pro</h1>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="add-task.html">Add Task</a></li>
+          <li><a href="search-task.html">Search Tasks</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Dashboard Container -->
+    <main class="app-container">
+      <h1>Task Dashboard</h1>
+      <section id="task-list">
+        <!-- Task items will be dynamically added here via JavaScript -->
+        <div id="no-tasks-message" style="display: none">
+          No tasks available. Please add a new task.
+        </div>
+      </section>
+      <div class="button-main-div">
+        <a id="add-task-button" href="add-task.html">Add Task</a>
+      </div>
+      <!-- Edit Task Modal -->
+      <div id="edit-task-modal" class="modal">
+        <div class="modal-content">
+          <div class="edit-task-close">
+              <h2>Edit Task</h2>
+            <span class="close-button" id="close-modal">&times;</span>
+          </div>
+          <form id="edit-task-form">
+            <input
+              type="text"
+              id="edit-task-name"
+              placeholder="Task Name"
+              required
+            />
+            <input
+              type="text"
+              id="edit-task-assigned"
+              placeholder="Assigned To"
+              required
+            />
+            <input type="date" id="edit-task-due" required />
+            <select id="edit-task-priority" required>
+              <option value="">Select Priority</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <textarea
+              id="edit-task-description"
+              placeholder="Task Description"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Update Task</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright &copy; 2024 TaskMaster Pro. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
